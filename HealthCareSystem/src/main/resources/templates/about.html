@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{fragments/main_layout}" >
+<head>
+<title>About page</title>
+</head>
+<body>
+	<div layout:fragment="content" class="container mySpace">
+		<div class="jumbotron" th:replace="fragments/layout"></div>
+		<div layout:fragment="content">
+			<div class="jumbotron">
+				<h1>Our Goal Is To Provide The Best Service In The Industry</h1>
+				<p>Since 2011, HealthCare Services Group has delivered
+					exceptional medical records services to
+					an ever-changing healthCare industry. Headquartered in Bentonville,
+					AR with strategically located regional and district operations
+					around the country, we provide professional management of ancillary
+					services to a diverse mix of satisfied clients. Flexible and
+					responsive, our people are trained to help you achieve success by
+					delivering innovative solutions, exceptional performance and
+					measurable results.
+				<p>
+					<img style="height: 400px; width: 100%; display: block;"
+						src="../Images/about.jpg" alt="about page">
+				<h3>Our Employees</h3>
+				<p>We believe our employees are our greatest asset. It is
+					because of the talented healthcare professionals and support staff
+					we employ that we are able to provide a variety of services to meet
+					and respond to the needs of our clients and patients.</p>
+				<br> <br>
+				<h3>Commitment to Quality</h3>
+				<h5>Quality Improvement Initiatives</h5>
+				<p>We know that when it comes to healthcare, self-evaluation,
+					and accountability are keys to maintaining and improving the
+					quality of patient services. In pursuit of this goal, we have
+					enhanced various programs which allow for continuous monitoring and
+					improvement of the quality services that are delivered.</p>
+				<h5>Quality Metrics</h5>
+				<p>Our performance measurement system allows for the objective
+					measurement of the clinical and operational performance of each
+					local office. Defined best practices have been instituted and allow
+					us to measure success – identifying continuous improvement
+					opportunities and aggregating and analyzing the results so that the
+					company and quality committee may take the appropriate action to
+					improve. The system takes advantage of the collective resources of
+					the Clinical and Corporate Operations, Compliance, and Information
+					Systems Departments to improve accountability and company
+					efficiency.</p>
+				<h5>Commitment to Clinical Compliance</h5>
+				<p>We know that accountability and quality improvement go
+					hand-in-hand. An independent team of full-time clinical compliance
+					specialists reports directly to the Chief Compliance Officer. The
+					team conducts internal audits of our offices and patient
+					assessments to verify that the offices are performing their duties
+					as eexpected.</p>
+			</div>
+		</div>
+		<div layout:fragment="content" class="container mySpace">
+			<div class="jumbotron" th:replace="fragments/footer::footer"></div>
+		</div>
+	</div>
+</body>
+</html>

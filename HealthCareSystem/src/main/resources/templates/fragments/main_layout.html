@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<link rel="stylesheet" href="../../static/css/style.css"
+	th:href="@{css/style.css}" />
+<link rel="stylesheet" href="../../static/css/materia/bootstrap.min.css"
+	th:href="@{css/materia/bootstrap.min.css}" />
+<script th:src="@{webjars/jquery/jquery.min.js}"></script>
+<script th:src="@{webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+</head>
+<body>
+	<div th:replace="fragments/header::header"></div>
+	<div layout:fragment="content">
+		<div class="jumbotron">
+			<img style="height: 600px; width: 100%; display: block;"
+				src="../Images/doctor.jpg" alt="Index page"> <br>
+			<p>Our healthcare center is looking to develop a state of the art patient
+				portfolio management system which is able to track patients’
+				medical history. This system is designed to facilitate our center in
+				retrieving, updating, and reporting the patient information efficiently, in
+				turn helping the doctors make timely, effective diagnoses. At the
+				same time, the center can utilize this system to monitor their
+				medical and financial management.</p>
+			<p>Currently, different departments in the healthcare center have
+				their own separated systems leading to a lack of communication
+				and inefficient data sharing. For example, the finance
+				department uses simple Excel spreadsheets to record the payment
+				information for the employees, which makes it inconvenient to retrieve and
+				update employees’ information; in the clinic department, the doctors
+				have to write down the prescriptions for the patients and keep paper
+				documents, and also do not have any information about the patients’
+				insurance plans; the medicine department has to keep the
+				prescription and inventory records on their own separate computer system.</p>
+			<p>While each system serves a distinctive purpose, there is no
+				coordination, assimilation and representation of data. The systems may
+				have duplicate data, which is obviously a waste of space. The different systems
+				also may have different application programs which result in
+				incompatible files.</p>
+			<p>Due to these disadvantages of the current system, a new unified healthcare
+				management system is proposed. This proposed healthcare management system would be constructed around
+				database management system (DBMS), using advanced database technology to construct,
+				maintain, and manipulate various kinds of data in the database system. The DBMS can track and update all the information of recorded
+				patients in the healthcare center during a specifed time span. The
+				major advantages of the DBMS are the ease in retrieving and updating
+				information, efficient data sharing and communication, and reliable
+				backup and security</p>
+			<p>Medical professionals who will be using this system every day —
+				doctors, nurses, medical technicians, medical receptionists and many others
+				— need to be engaged early in the process so they have a say in how
+				the system is designed, receive appropriate training, and have ample
+				time to prepare for what will be a monumental shift in how they
+				work.</p>
+
+
+		</div>
+		<div layout:fragment="content" class="container mySpace">
+			<div th:replace="fragments/footer::footer"></div>
+</body>
+</html>
